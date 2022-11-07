@@ -1,4 +1,3 @@
-alert("Be sure to test or check the Form validations by using the Email input. Thanks");
 const form = document.querySelector("form");
 const email = document.getElementById("email");
 const emailErrorText = document.querySelector(".error-text");
