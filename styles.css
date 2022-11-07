@@ -1,0 +1,278 @@
+:root {
+    --Desaturated-Red--: hsl(0, 36%, 70%);
+    --Soft-Red--: hsl(0, 93%, 68%);
+    --Dark-Grayish-Red--: hsl(0, 6%, 24%);
+    --Font-Size-: 1rem;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 140vh;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: var(--Font-Size-);
+    color: var(--Desaturated-Red--);
+    margin: 0;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mobile-header {
+    display: flex;
+}
+
+.desktop-header {
+    display: none;
+}
+
+.header {
+    align-self: flex-start;
+    padding: 1.5em;
+    max-width: 55%;
+}
+
+.container {
+    width: 100%;
+    align-self: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.hero-desktop {
+    display: none;
+}
+
+.img-sect {
+    width: 100%;
+}
+
+.hero-mobile {
+    display: block;
+    width: 100%;
+}
+
+.text-sect {
+    padding-top: 2em;
+}
+
+.text-div {
+    align-items: center;
+}
+
+.h1 {
+    padding: 1em 0;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin: 0 auto;
+}
+
+span {
+    font-size: 2.5rem;
+}
+
+.black-h1 {
+    color: var(--Dark-Grayish-Red--);
+}
+
+.para {
+    margin: 0;
+    padding: 0 2em 2em 2em;
+    font-weight: 400;
+    max-width: 350px;
+    line-height: 1.5;
+    font-size: .85rem;
+}
+
+#form {
+    padding: 0 0 1em 4em;
+}
+
+#email {
+    padding: 1em;
+    border-radius: 100px;
+    border: 1.5px solid var(--Desaturated-Red--);
+}
+
+#arrow {
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    padding: 0.9em 2em;
+    border-radius: 100px;
+    position: relative;
+    right: 50px;
+}
+
+#error-icon {
+    max-width: 20px;
+    position: relative;
+    left: 225px;
+    bottom: 50px;
+    display: none;
+}
+.errorText-errorIcon {
+    align-items: flex-start;
+}
+
+small {
+    margin-top: 0.5em;
+    font-size: 0.7rem;
+    text-align: left;
+}
+
+.email-arrowIcon {
+    align-items: center;
+    flex-direction: row;
+}
+
+#email {
+    color: var(--Desaturated-Red--);
+}
+
+#email:invalid {
+    border: 2px solid var(--Soft-Red--);
+}
+
+/* .input:invalid+small::after {
+    content: "Please provide a valid email";
+    font-size: 0.75rem;
+    display: flex;
+    color: hsl(0, 93%, 68%);
+    position: absolute;
+    width: 160px;
+} */
+
+footer {
+    padding: 2em;
+}
+
+/* MIDDLE SCREEN DESIGNS */
+
+
+@media (min-width: 1000px) {
+    body {
+        background: url(images/bg-pattern-desktop.svg), no-repeat, top, left;
+        min-height: 100vh;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .container {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        position: absolute;
+    }
+
+    .img-sect {
+        width: auto;
+    }
+
+    .hero-mobile {
+        display: none;
+    }
+
+    .hero-desktop {
+        display: block;
+        max-width: 80%;
+        position: relative;
+        left: 125px;
+    }
+
+    .text-sect {
+        justify-content: space-around;
+        padding: 1em;
+    }
+
+    .mobile-header {
+        display: none;
+    }
+
+    .desktop-header {
+        display: flex;
+    }
+
+    .header {
+        max-width: 100%;
+        position: relative;
+        top: 20px;
+        padding-left: 4.75em;
+    }
+
+    .h1 {
+        align-self: flex-start;
+        margin: 0;
+        padding: 1em 0 1em 3.2em;
+    }
+
+    span {
+        font-size: 3.5rem;
+        line-height: 1.1;
+    }
+
+    .red-h1 {
+        font-weight: 300;
+    }
+
+    #form {
+        padding: 0 0 0 5em;
+    }
+
+    #arrow {
+        box-shadow: 8px 3px 20px 7px hsl(0deg 60% 92%);
+        padding: 0.9em 2.5em;
+        right: 55px;
+    }
+
+    #arrow:hover {
+        background-image: linear-gradient(135deg, hsl(0deg 80% 86% / 60%), hsl(0deg 74% 74% / 60%));
+        box-shadow: 0px 10px 20px -3px hsl(0deg 6% 24% / 40%);
+    }
+
+    footer {
+        padding: 0;
+    }
+}
+
+/* LARGE SCREEN DESIGNS */
+
+@media (min-width: 1200px) {
+    .text-sect {
+        padding: 2em 6em;
+        position: relative;
+        left: 5%;
+    }
+
+    .text-div {
+        padding-bottom: 3em;
+    }
+
+    .header {
+        bottom: 20px;
+        top: 0;
+    }
+}
+
+
+.attribution {
+    font-size: 0.5rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--Dark-Grayish-Red--);
+}
+
+.attribution a:hover {
+    color: hsl(108, 91%, 49%);
+}

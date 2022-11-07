@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body>
+
+    <header class="header mobile-header flex">
+      <img src="images/logo.svg" alt="header" />
+    </header>
+
+    <div class="container flex">
+      <section class="img-sect">
+        <img src="images/hero-mobile.jpg" alt="hero-mobile" class="hero-mobile" />
+        <img src="images/hero-desktop.jpg" alt="hero-desktop" class="hero-desktop">
+      </section>
+
+      <section class="text-sect flex">
+        <header class="header desktop-header flex">
+          <img src="images/logo.svg" alt="header" />
+        </header>
+
+        <div class="text-div flex">
+          <h1 class="h1 flex">
+            <span class="red-h1">We're</span> 
+            <span class="black-h1">coming</span> 
+            <span class="black-h1">soon</span>
+          </h1>
+
+          <p class="para">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+
+          <form novalidate class="flex" id="form" method="post">
+            <div class="email-arrowIcon flex">
+              <input type="email" name="email" class="input" id="email" required minlength="8" size="35" placeholder="Email Address">
+              <input type="image" id="arrow" src="images/icon-arrow.svg" alt="submit">
+              
+            </div>
+            <div class="errorText-erroricon flex">
+              <small class="error-text" aria-live="polite"></small>
+              <img src="images/icon-error.svg" id="error-icon" alt="error-icon">
+            </div>
+          </form>
+          
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://macchristo.github.io/Personal-site-1/"
+          >Macaulay Omoikhoje De-great</a
+        >.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
