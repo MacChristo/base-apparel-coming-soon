@@ -26,8 +26,6 @@ form.addEventListener("submit", function (event) {
         showError();
         //and prevent the form from submitting it
         event.preventDefault();
-    } else {
-        alert("Your email has been submitted."); // Sends an alert to tell the user that their email has been submitted
     }
 })
 
