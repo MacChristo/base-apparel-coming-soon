@@ -49,7 +49,7 @@ Users should be able to:
 
 ### What I learned
 
-I've done quite a few JavaScript project now for beginners. It's still pretty hard for me though but I getting on quite well. I will continue to take on more project to polish  my JS skills. In this project, I learned a lot about `form` validations.
+I've done quite a few JavaScript project now for beginners. It's still pretty hard for me though but I getting on quite well. I will continue to take on more project to polish  my JS skills. In this project, I learned a lot about `form` validations. This projercct was really interesting inded
 
 ### Continued development
 
