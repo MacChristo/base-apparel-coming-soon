@@ -19,49 +19,71 @@
     <title>Frontend Mentor | Base Apparel coming soon page</title>
   </head>
   <body>
+    <main>
+      <header class="header mobile-header flex">
+        <img src="images/logo.svg" alt="header" />
+      </header>
 
-    <header class="header mobile-header flex">
-      <img src="images/logo.svg" alt="header" />
-    </header>
+      <div class="container flex">
+        <section class="img-sect">
+          <img
+            src="images/hero-mobile.jpg"
+            alt="hero-mobile"
+            class="hero-mobile"
+          />
+          <img
+            src="images/hero-desktop.jpg"
+            alt="hero-desktop"
+            class="hero-desktop"
+          />
+        </section>
 
-    <div class="container flex">
-      <section class="img-sect">
-        <img src="images/hero-mobile.jpg" alt="hero-mobile" class="hero-mobile" />
-        <img src="images/hero-desktop.jpg" alt="hero-desktop" class="hero-desktop">
-      </section>
+        <section class="text-sect flex">
+          <header class="header desktop-header flex">
+            <img src="images/logo.svg" alt="header" />
+          </header>
 
-      <section class="text-sect flex">
-        <header class="header desktop-header flex">
-          <img src="images/logo.svg" alt="header" />
-        </header>
+          <div class="text-div flex">
+            <h1 class="h1 flex">
+              <span class="red-h1">We're</span>
+              <span class="black-h1">coming</span>
+              <span class="black-h1">soon</span>
+            </h1>
 
-        <div class="text-div flex">
-          <h1 class="h1 flex">
-            <span class="red-h1">We're</span> 
-            <span class="black-h1">coming</span> 
-            <span class="black-h1">soon</span>
-          </h1>
+            <p class="para">
+              Hello fellow shoppers! We're currently building our new fashion
+              store. Add your email below to stay up-to-date with announcements
+              and our launch deals.
+            </p>
 
-          <p class="para">
-            Hello fellow shoppers! We're currently building our new fashion
-            store. Add your email below to stay up-to-date with announcements
-            and our launch deals.
-          </p>
-
-          <form novalidate class="flex" id="form">
-            <div class="email-arrowIcon flex">
-              <input type="email" name="email" class="input" id="email" required minlength="8" size="35" placeholder="Email Address">
-              <button type="submit"><input type="image" id="arrow" src="images/icon-arrow.svg" alt="submit"></button>              
-            </div>
-            <div class="errorText-erroricon flex">
-              <small class="error-text" aria-live="polite"></small>
-              <img src="images/icon-error.svg" id="error-icon">
-            </div>
-          </form>
-          
-        </div>
-      </section>
-    </div>
+            <form novalidate class="flex" id="form">
+              <div class="email-arrowIcon flex">
+                <input
+                  type="email"
+                  name="email"
+                  class="input"
+                  id="email"
+                  required
+                  minlength="8"
+                  size="35"
+                  placeholder="Email Address"
+                />
+                <input
+                  type="image"
+                  id="arrow"
+                  src="images/icon-arrow.svg"
+                  alt="submit"
+                />
+              </div>
+              <div class="errorText-erroricon flex">
+                <small class="error-text" aria-live="polite"></small>
+                <img src="images/icon-error.svg" id="error-icon" />
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
 
     <footer>
       <p class="attribution">
